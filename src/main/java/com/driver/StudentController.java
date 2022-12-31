@@ -22,6 +22,7 @@ public class StudentController {
     @PostMapping("/add-student")
     public ResponseEntity<String> addStudent(@RequestBody Student student){
 
+
         return new ResponseEntity<>("New student added successfully", HttpStatus.CREATED);
     }
 
