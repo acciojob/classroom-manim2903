@@ -60,7 +60,7 @@ public class StudentRepository {
     }
     public void deleteTeacher(String name){
         List<String> students=new ArrayList<>();
-        if(studentDb.containsKey(name)){
+        if(studentTeacherPairDb.containsKey(name)){
             //1.Find the student names by teacher name from the pair
             students=studentTeacherPairDb.get(name);
 
